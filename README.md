@@ -1,0 +1,3 @@
+# Variable Annotations
+Se refieren a la capacidad de agregar metadatos o información adicional a las variables, especialmente en lo que respecta a su tipo de datos. Esta característica se introdujo en Python 3.6 como parte de las "Anotaciones de tipo" y se utiliza principalmente para proporcionar información sobre el tipo de datos que se espera que una variable contenga. Sin embargo, es importante destacar que estas anotaciones no afectan el comportamiento en tiempo de ejecución del programa y son opcionales.
+Las anotaciones de variables se realizan utilizando el operador de dos puntos (:) después del nombre de la variable, seguido del tipo de datos esperado.
