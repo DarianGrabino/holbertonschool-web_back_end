@@ -10,13 +10,13 @@ La biblioteca typing no afecta el comportamiento en tiempo de ejecución de un p
 
 Algunos de los elementos más comunes proporcionados por la biblioteca typing incluyen:
 
-Annotations: Permite anotar variables, argumentos de funciones y valores de retorno de funciones con información sobre los tipos de datos esperados. Esto ayuda a los desarrolladores a comprender mejor el código y puede ser utilizado por herramientas externas para realizar verificaciones de tipos estáticos.
+- Annotations: Permite anotar variables, argumentos de funciones y valores de retorno de funciones con información sobre los tipos de datos esperados. Esto ayuda a los desarrolladores a comprender mejor el código y puede ser utilizado por herramientas externas para realizar verificaciones de tipos estáticos.
 
-Tipos Compuestos: Ofrece tipos compuestos como List, Tuple, Dict, Set, Union, Optional, entre otros, que pueden ser útiles para describir estructuras de datos complejas y argumentos de funciones.
+- Tipos Compuestos: Ofrece tipos compuestos como List, Tuple, Dict, Set, Union, Optional, entre otros, que pueden ser útiles para describir estructuras de datos complejas y argumentos de funciones.
 
-Callable: Proporciona el tipo Callable para anotar funciones y objetos que pueden ser llamados como funciones. Esto ayuda a especificar los tipos de argumentos y valores de retorno esperados para funciones.
+- Callable: Proporciona el tipo Callable para anotar funciones y objetos que pueden ser llamados como funciones. Esto ayuda a especificar los tipos de argumentos y valores de retorno esperados para funciones.
 
-Type Aliases: Permite crear alias para tipos complejos o nombres de tipo largos, lo que hace que las anotaciones de tipo sean más legibles.
+- Type Aliases: Permite crear alias para tipos complejos o nombres de tipo largos, lo que hace que las anotaciones de tipo sean más legibles.
 
-Verificación de Tipos: Aunque Python es un lenguaje de tipado dinámico, algunas herramientas externas como MyPy pueden utilizar las anotaciones de tipo en combinación con la biblioteca typing para realizar verificaciones estáticas de tipos en el código.
+- Verificación de Tipos: Aunque Python es un lenguaje de tipado dinámico, algunas herramientas externas como MyPy pueden utilizar las anotaciones de tipo en combinación con la biblioteca typing para realizar verificaciones estáticas de tipos en el código.
 
