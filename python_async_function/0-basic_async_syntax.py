@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""asynchronous routine"""
+"""Asynchronous routine"""
 import asyncio
 import random
 
