@@ -23,6 +23,3 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     await asyncio.gather(*tasks)
 
     return delays
-
-if __name__ == "__main__":
-    asyncio.run(main())
