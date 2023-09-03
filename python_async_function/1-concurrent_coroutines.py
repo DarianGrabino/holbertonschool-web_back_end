@@ -5,21 +5,12 @@ from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> List[float]:
-    """We create a list to store the delays in ascending order"""
+async def wait_n(n: int = 0, max_delay: int = 10) -> List[float]:
+    """Create lists and add the delay to the right place in the sorted list"""
+    tasks = []
     delays = []
-
-    async def helper(delay: float):
-        """We add the delay to the right place in the sorted list"""
-        await asyncio.sleep(delay)
-        for i, d in enumerate(delays):
-            if delay < d:
-                delays.insert(i, delay)
-                break
-        else:
-            delays.append(delay)
-
-    tasks = [helper(wait_random(max_delay)) for _ in range(n)]
-    await asyncio.gather(*tasks)
-
+    for i in range(n):
+        tasks.append(wait_random(max_delay))
+    for task in asyncio.as_completed(tasks):
+        delays.append(await task)
     return delays
