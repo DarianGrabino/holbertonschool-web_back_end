@@ -2,6 +2,7 @@
 """Change school topics"""
 from pymongo.collection import Collection
 
+
 def update_topics(mongo_collection: Collection, name: str, topics: list):
     """changes all topics of a school document based on the name"""
     filter_query = {"name": name}
